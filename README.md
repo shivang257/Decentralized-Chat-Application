@@ -9,7 +9,6 @@ Before you can run this project, you'll need to have the following installed on 
 - Python 3.8+
 - Django 4.x
 - Django Channels
-- Redis (for WebSocket management)
 
 ## Installation
 
