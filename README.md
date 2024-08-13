@@ -20,3 +20,30 @@ Follow these steps to set up and run the application locally:
 ```bash
 https://github.com/shivang257/Decentralized-Chat-Application.git
 cd Decentralized-Chat-Application
+```
+
+### 2. Set Up a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
+
+### 3. Start Redis with:
+```bash
+redis-server
+```
+
+### 4. Apply Migrations
+```bash
+python manage.py migrate
+```
+
+### 5. Run the Development Server
+```bash
+python manage.py runserver
+```
+
+If requirements.txt doesn't exist, you can manually install the necessary packages:
+```bash
+pip install django channels redis
+```
